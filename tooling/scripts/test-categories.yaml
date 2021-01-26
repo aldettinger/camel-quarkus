@@ -168,6 +168,7 @@ group-11:
   - mustache
   - netty
   - qute
+  - redis
   - servlet
   - stringtemplate
   - tarfile
