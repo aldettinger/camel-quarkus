@@ -199,6 +199,7 @@
         <module>quartz</module>
         <module>qute</module>
         <module>reactive-streams</module>
+        <module>redis</module>
         <module>ref</module>
         <module>rest</module>
         <module>rest-openapi</module>

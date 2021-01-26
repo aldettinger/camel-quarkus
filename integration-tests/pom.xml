@@ -191,6 +191,7 @@
         <module>quartz-clustered</module>
         <module>qute</module>
         <module>reactive-streams</module>
+        <module>redis</module>
         <module>rest</module>
         <module>rest-openapi</module>
         <module>saga</module>
