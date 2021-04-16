@@ -24,9 +24,8 @@
 name: "Camel Redis"
 description: "Aggregation repository using Redis as datastore"
 metadata:
-  unlisted: true
   guide: "https://camel.apache.org/camel-quarkus/latest/reference/extensions/redis.html"
   categories:
   - "integration"
   status:
-  - "preview"
+  - "stable"
