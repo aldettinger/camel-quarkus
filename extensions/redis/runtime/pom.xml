@@ -32,7 +32,7 @@
 
     <properties>
         <camel.quarkus.jvmSince>1.6.0</camel.quarkus.jvmSince>
-        <camel.quarkus.nativeSince>1.6.0</camel.quarkus.nativeSince>
+        <camel.quarkus.nativeSince>1.9.0</camel.quarkus.nativeSince>
     </properties>
 
     <dependencyManagement>
@@ -65,7 +65,7 @@
             <artifactId>svm</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!-- TODO: Making netty transport non-optional only for the static code analysis seems wrong: cut the path with substitutions ? -->
+        <!-- @TODO: Making netty transport non-optional only for the static code analysis seems wrong: cut the path with substitutions ? -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-transport-native-epoll</artifactId>

@@ -9,10 +9,10 @@
 :cq-description: Aggregation repository using Redis as datastore
 :cq-deprecated: false
 :cq-jvm-since: 1.6.0
-:cq-native-since: 1.6.0
+:cq-native-since: 1.9.0
 
 [.badges]
-[.badge-key]##JVM since##[.badge-supported]##1.6.0## [.badge-key]##Native since##[.badge-supported]##1.6.0##
+[.badge-key]##JVM since##[.badge-supported]##1.6.0## [.badge-key]##Native since##[.badge-supported]##1.9.0##
 
 Aggregation repository using Redis as datastore
 
@@ -23,6 +23,10 @@ Aggregation repository using Redis as datastore
 Please refer to the above link for usage and configuration details.
 
 == Maven coordinates
+
+https://code.quarkus.io/?extension-search=camel-quarkus-redis[Create a new project with this extension on code.quarkus.io, window="_blank"]
+
+Or add the coordinates to your existing project:
 
 [source,xml]
 ----
