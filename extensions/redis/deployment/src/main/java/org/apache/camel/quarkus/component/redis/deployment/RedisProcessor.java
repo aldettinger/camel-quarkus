@@ -87,6 +87,7 @@ class RedisProcessor {
         // Looks to be used in RiverUnmarshaller.doReadNewObject(...)
         // when unmarshalling a proxy class ? Is this covered by tests ? Looks not... maybe cut this functionality with a substitution ?
         // Seems we still have a native build issue with this. Let's have a look.
+        // Really needed ? as we register Proxy.h as an unsafe accessed field above ?
         producer.produce(new ReflectiveClassBuildItem(false, true, Proxy.class));
     }
 
