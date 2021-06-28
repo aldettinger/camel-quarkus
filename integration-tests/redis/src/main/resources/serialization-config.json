@@ -1,5 +1,1646 @@
 [
 	{
-		"name": "org.apache.camel.support.DefaultExchangeHolder"
+		"name": "org.apache.camel.support.DefaultExchangeHolder",
+		"customTargetConstructorClass": "org.apache.camel.support.DefaultExchangeHolder"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "org.apache.camel.support.DefaultExchangeHolder",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.LinkedHashMap"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.HashMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.HashMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonMap",
+		"customTargetConstructorClass": "java.util.Collections$SingletonMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonSet",
+		"customTargetConstructorClass": "java.util.Collections$SingletonSet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonList",
+		"customTargetConstructorClass": "java.util.Collections$SingletonList"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$SingletonList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptyMap",
+		"customTargetConstructorClass": "java.util.Collections$EmptyMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptyMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptyMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptySet",
+		"customTargetConstructorClass": "java.util.Collections$EmptySet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptySet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptySet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptySet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptyList",
+		"customTargetConstructorClass": "java.util.Collections$EmptyList"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptyList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptyList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$EmptyList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.ArrayList",
+		"customTargetConstructorClass": "java.util.ArrayList"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.ArrayList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.ArrayList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.ArrayList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedList",
+		"customTargetConstructorClass": "java.util.LinkedList"
+	},
+	{
+		"name": "java.util.AbstractSequentialList",
+		"customTargetConstructorClass": "java.util.AbstractSequentialList"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSequentialList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSequentialList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSequentialList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedList",
+		"customTargetConstructorClass": "java.util.AbstractSequentialList"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.util.HashSet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashSet",
+		"customTargetConstructorClass": "java.util.LinkedHashSet"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.util.HashSet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashSet",
+		"customTargetConstructorClass": "java.util.HashSet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.TreeSet",
+		"customTargetConstructorClass": "java.util.TreeSet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.TreeSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.TreeSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.TreeSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.IdentityHashMap",
+		"customTargetConstructorClass": "java.util.IdentityHashMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.IdentityHashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.IdentityHashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.HashMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Hashtable",
+		"customTargetConstructorClass": "java.util.Hashtable"
+	},
+	{
+		"name": "java.util.Dictionary",
+		"customTargetConstructorClass": "java.util.Dictionary"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Dictionary",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Hashtable",
+		"customTargetConstructorClass": "java.util.Dictionary"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Hashtable",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.LinkedHashMap"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.HashMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.HashMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.TreeMap",
+		"customTargetConstructorClass": "java.util.TreeMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.TreeMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.TreeMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.EnumSet",
+		"customTargetConstructorClass": "java.util.EnumSet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.EnumSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.EnumSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.EnumSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.EnumMap",
+		"customTargetConstructorClass": "java.util.EnumMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.EnumMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.EnumMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.ConcurrentHashMap",
+		"customTargetConstructorClass": "java.util.concurrent.ConcurrentHashMap"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.ConcurrentHashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.ConcurrentHashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.CopyOnWriteArrayList",
+		"customTargetConstructorClass": "java.util.concurrent.CopyOnWriteArrayList"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.CopyOnWriteArrayList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.CopyOnWriteArraySet",
+		"customTargetConstructorClass": "java.util.concurrent.CopyOnWriteArraySet"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.CopyOnWriteArraySet",
+		"customTargetConstructorClass": "java.util.AbstractSet"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.CopyOnWriteArraySet",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.concurrent.CopyOnWriteArraySet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.util.Vector"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Stack",
+		"customTargetConstructorClass": "java.util.Stack"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.util.Vector"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Vector",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Stack",
+		"customTargetConstructorClass": "java.util.Vector"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Stack",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Stack",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Stack",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.ArrayDeque",
+		"customTargetConstructorClass": "java.util.ArrayDeque"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.ArrayDeque",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.ArrayDeque",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$ReverseComparator",
+		"customTargetConstructorClass": "java.util.Collections$ReverseComparator"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$ReverseComparator",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$ReverseComparator2",
+		"customTargetConstructorClass": "java.util.Collections$ReverseComparator2"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$ReverseComparator2",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$CopiesList",
+		"customTargetConstructorClass": "java.util.Collections$CopiesList"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$CopiesList",
+		"customTargetConstructorClass": "java.util.AbstractList"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$CopiesList",
+		"customTargetConstructorClass": "java.util.AbstractCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$CopiesList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSet",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableSet"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableList",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableList"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableList",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableMap",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSortedSet",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableSortedSet"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSet",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableSet"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSortedSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSortedMap",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableSortedMap"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableMap",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableMap"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSortedMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSet",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableSet"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableSet",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.util.Collections$UnmodifiableCollection"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableCollection",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.lang.Object",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet",
+		"customTargetConstructorClass": "java.lang.Object"
 	}
 ]
