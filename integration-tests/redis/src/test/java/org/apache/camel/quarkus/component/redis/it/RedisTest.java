@@ -16,6 +16,9 @@
  */
 package org.apache.camel.quarkus.component.redis.it;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
 import io.quarkus.test.common.QuarkusTestResource;
@@ -46,6 +49,61 @@ class RedisTest {
                 .as(String[].class);
         assertEquals(1, results.length);
         assertEquals("ABC", results[0]);
+    }
+
+    //@Test
+    void generate() throws Exception {
+        // Needed by camel-redis
+        simulateSerialClass(org.apache.camel.support.DefaultExchangeHolder.class);
+        simulateSerialClass(java.util.LinkedHashMap.class);
+
+        // Needed by JBoss river marshaller
+        //simulateSerialClass(Class.forName("java.util.Collections$SingletonMap"));
+        //...
+        // Ok so need to have a simulateSerialClass for each call to method below
+        // private static SerializableClassDescriptor getSerializableClassDescriptor(final Class<?> subject, final ClassDescriptor superDescriptor) {
+
+        Class<?> descriptorsClazz = Class.forName("org.jboss.marshalling.river.ClassDescriptors");
+        Class<?> descriptorClazz = Class.forName("org.jboss.marshalling.river.ClassDescriptor");
+        Class<?> serializableDescriptorClazz = Class.forName("org.jboss.marshalling.river.SerializableClassDescriptor");
+
+        Method getDescriptorTypeMethod = descriptorClazz.getMethod("getType");
+        getDescriptorTypeMethod.setAccessible(true);
+
+        for (Field f : descriptorsClazz.getDeclaredFields()) {
+            if (f.getType().equals(descriptorClazz)) {
+                f.setAccessible(true);
+                Object descriptor = f.get(null);
+
+                if (serializableDescriptorClazz.isAssignableFrom(descriptor.getClass())) {
+                    Class<?> descriptorType = (Class<?>) getDescriptorTypeMethod.invoke(descriptor);
+                    simulateSerialClass(descriptorType);
+                }
+            }
+        }
+    }
+
+    // @TODO: Format in json
+    // @TODO: Is there any doublon ? avoid that
+    // @TODO: explain what is does, ie each call to sun.reflect.ReflectionProxy.newConstructorForSerialization(Class<?> cl, Constructor<?> constructorToCall)
+    // should end up with a corresponding entry in serialization-config.json
+    void simulateSerialClass(Class<?> subject) {
+        System.out.println(String.format(",{\"name\": \"%s\", \"customTargetConstructorClass\": \"%s\"}", subject.getName(),
+                subject.getName()));
+        for (Class<?> t = subject.getSuperclass(); t != null; t = t.getSuperclass()) {
+
+            simulateSerialClass(t);
+
+            for (Constructor<?> constructor : t.getDeclaredConstructors()) {
+
+                final Class<?>[] parameterTypes = constructor.getParameterTypes();
+                if (parameterTypes.length == 0) {
+                    constructor.setAccessible(true);
+                    System.out.println(String.format(",{\"name\": \"%s\", \"customTargetConstructorClass\": \"%s\"}",
+                            subject.getName(), constructor.getDeclaringClass().getName()));
+                }
+            }
+        }
     }
 
 }
