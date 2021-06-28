@@ -1,0 +1,48 @@
+[
+	{
+		"name": "org.apache.camel.support.DefaultExchangeHolder"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	},
+	{
+		"name": "java.util.AbstractMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	}
+	,
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	}
+	,
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	}
+	,
+	{
+		"name": "java.util.HashMap",
+		"customTargetConstructorClass": "java.util.HashMap"
+	}
+	,
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.HashMap"
+	}
+	,
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.AbstractMap"
+	}
+	,
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.lang.Object"
+	}
+	,
+	{
+		"name": "java.util.LinkedHashMap",
+		"customTargetConstructorClass": "java.util.LinkedHashMap"
+	}
+]

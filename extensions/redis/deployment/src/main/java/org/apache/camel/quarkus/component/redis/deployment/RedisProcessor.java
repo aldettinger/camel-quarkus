@@ -29,6 +29,20 @@ import org.jboss.logging.Logger;
 import org.jboss.marshalling.ProviderDescriptor;
 import org.jboss.marshalling.river.RiverProviderDescriptor;
 
+/**
+ * To go beyond a prototype, we would need:
+ * + quarkus support for regular serialization use cases https://github.com/quarkusio/quarkus/issues/14530
+ * + quarkus support for "customTargetConstructorClass" in case the DefaultExchangeHolder design changes ?
+ *
+ * The redis extensions needs an extra serialization-config.json file in order to serialize
+ * <code>org.apache.camel.support.DefaultExchangeHolder</code> instances.
+ * Under the hood, jboss-marshaller may generate some calls to
+ * <code>sun.reflect.ReflectionFactory.newConstructorForSerialization(Constructor, Constructor)</code>.
+ * Such non regular serialization uses cases are not detected by the agent. So, each time the DefaultExchangeHolder
+ * structure would evolve, we would need to manually
+ * register the needed serialization configs, including maybe use 'customTargetConstructorClass'.
+ * More details here: https://github.com/oracle/graal/issues/3156
+ */
 class RedisProcessor {
 
     private static final Logger LOG = Logger.getLogger(RedisProcessor.class);
@@ -38,6 +52,7 @@ class RedisProcessor {
             "io.netty.channel.DefaultChannelId",
             "io.netty.channel.socket.nio.ProtocolFamilyConverter$1",
             "io.netty.util.NetUtil",
+            "io.netty.channel.socket.InternetProtocolFamily$1",
             "io.netty.channel.socket.InternetProtocolFamily",
             "io.netty.resolver.HostsFileEntriesResolver",
             "io.netty.resolver.dns.DnsNameResolver",
@@ -69,10 +84,9 @@ class RedisProcessor {
         producer.produce(new ReflectiveClassBuildItem(false, false, "org.jboss.marshalling.river.RiverProviderDescriptor"));
         producer.produce(new ReflectiveClassBuildItem(false, false, "io.netty.channel.socket.nio.NioDatagramChannel"));
 
+        // Needed by the RiverUnmarshaller to deserialize DefaultExchangeHolder.inHeaders
         producer.produce(new ReflectiveClassBuildItem(false, true, "org.apache.camel.support.DefaultExchangeHolder"));
-        producer.produce(new ReflectiveClassBuildItem(true, false, "java.util.HashMap"));
-
-        //producer.produce(new ReflectiveClassBuildItem(false, true, "java.lang.reflect.Proxy"));
+        producer.produce(new ReflectiveClassBuildItem(true, false, "java.util.LinkedHashMap"));
 
         // The snippet below tries to register fields from DefaultExchangeHolder
         // however, we would need to register the concrete type (that may be determined at runtime only ?)
