@@ -51,7 +51,7 @@ class RedisTest {
         assertEquals("ABC", results[0]);
     }
 
-    //@Test
+    @Test
     void generate() throws Exception {
         // Needed by camel-redis
         simulateSerialClass(org.apache.camel.support.DefaultExchangeHolder.class);
@@ -88,8 +88,6 @@ class RedisTest {
     // @TODO: explain what is does, ie each call to sun.reflect.ReflectionProxy.newConstructorForSerialization(Class<?> cl, Constructor<?> constructorToCall)
     // should end up with a corresponding entry in serialization-config.json
     void simulateSerialClass(Class<?> subject) {
-        System.out.println(String.format(",{\"name\": \"%s\", \"customTargetConstructorClass\": \"%s\"}", subject.getName(),
-                subject.getName()));
         for (Class<?> t = subject.getSuperclass(); t != null; t = t.getSuperclass()) {
 
             simulateSerialClass(t);
