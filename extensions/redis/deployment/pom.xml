@@ -31,8 +31,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-netty-deployment</artifactId>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-quarkus-20-deployment</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>

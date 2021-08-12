@@ -37,16 +37,6 @@ public class RedisResource {
 
     private ConcurrentLinkedQueue<String> aggregates = new ConcurrentLinkedQueue<>();
 
-    // @TODO:
-    // There is a static compilation issue with MethodHandles => Graal 21 ?
-    //
-    // Unsupported type jdk.internal.reflect.MethodAccessorGenerator
-    // org.jboss.marshalling.reflect.JDKSpecific.newConstructorForSerialization
-    // Unsupported feature but seems not used at runtime => substitution ?
-    //
-    // Netty-native-transport option => Find a better way... cut the code path with substitutions ?
-    // Use ServiceProviderBuildItem for "META-INF/services/org.jboss.marshalling.ProviderDescriptor"
-
     @Inject
     ProducerTemplate producerTemplate;
 

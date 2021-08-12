@@ -33,10 +33,13 @@ public class RedisRoute extends RouteBuilder {
 
     @Override
     public void configure() {
+
+        RedisAggregationRepository redisAggregationStrategy = new RedisAggregationRepository("aggregation", redisUrl);
+
         from("direct:start")
                 .log("Aggregating \"${body}\" with correlation key \"${header.myId}\"")
                 .aggregate(header("myId"), new MyAggregationStrategy())
-                .aggregationRepository(new RedisAggregationRepository("aggregation", redisUrl))
+                .aggregationRepository(redisAggregationStrategy)
                 .completionSize(3)
                 .log("Completed the aggregate \"${body}\"")
                 .bean(redisResource, "storeMessage");
