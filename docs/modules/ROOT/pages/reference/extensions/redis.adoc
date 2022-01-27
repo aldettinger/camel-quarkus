@@ -10,7 +10,11 @@
 :cq-description: Aggregation repository using Redis as datastore
 :cq-deprecated: false
 :cq-jvm-since: 1.6.0
+<<<<<<< HEAD
 :cq-native-since: 3.0.0
+=======
+:cq-native-since: 2.7.0
+>>>>>>> 477236331c (Rebase on 2.7.0.CR1, native agent captured configs but still issues with customTargetConstructorClass)
 
 ifeval::[{doc-show-badges} == true]
 [.badges]

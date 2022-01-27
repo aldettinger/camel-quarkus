@@ -6688,12 +6688,12 @@
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-quarkus-20</artifactId>
-                <version>${redis.version}</version>
+                <version>${redisson-quarkus.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-quarkus-20-deployment</artifactId>
-                <version>${redis.version}</version>
+                <version>${redisson-quarkus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

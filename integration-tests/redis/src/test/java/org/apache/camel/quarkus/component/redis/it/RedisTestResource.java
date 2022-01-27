@@ -30,7 +30,7 @@ import org.testcontainers.utility.TestcontainersConfiguration;
 public class RedisTestResource implements QuarkusTestResourceLifecycleManager {
     private static final Logger LOG = LoggerFactory.getLogger(RedisTestResource.class);
     private static final int REDIS_PORT = 6379;
-    private static final String REDIS_IMAGE = "redis:6.0.9";
+    private static final String REDIS_IMAGE = "redis:6.2.6";
 
     private GenericContainer container;
 

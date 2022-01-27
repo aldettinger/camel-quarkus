@@ -1,0 +1,10 @@
+[
+  {
+    "name":"org.apache.camel.support.DefaultExchangeHolder",
+    "customTargetConstructorClass":"java.lang.Object"
+  },
+  {
+    "name":"java.util.LinkedHashMap",
+    "customTargetConstructorClass":"java.lang.Object"
+  }
+]
