@@ -6954,9 +6954,25 @@
         <version>4.0.1</version><!-- io.quarkiverse.cxf:quarkus-cxf-bom:2.0.4 -->
       </dependency>
       <dependency>
+<<<<<<< HEAD
         <groupId>org.apache.cxf</groupId><!-- io.quarkiverse.cxf:quarkus-cxf-bom:2.0.4 -->
         <artifactId>cxf-rt-ws-policy</artifactId><!-- io.quarkiverse.cxf:quarkus-cxf-bom:2.0.4 -->
         <version>4.0.1</version><!-- io.quarkiverse.cxf:quarkus-cxf-bom:2.0.4 -->
+=======
+        <groupId>org.redisson</groupId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <artifactId>redisson-quarkus-20</artifactId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <version>3.16.7</version><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+      </dependency>
+      <dependency>
+        <groupId>org.redisson</groupId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <artifactId>redisson-quarkus-20-deployment</artifactId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <version>3.16.7</version><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId><!-- org.codehaus.groovy:groovy-bom:3.0.8 -->
+        <artifactId>groovy</artifactId><!-- org.codehaus.groovy:groovy-bom:3.0.8 -->
+        <version>3.0.8</version><!-- org.codehaus.groovy:groovy-bom:3.0.8 -->
+>>>>>>> bae12ccb12 (Rebase on 2.10.0-SNAPSHOT and investigate the serialization issue)
       </dependency>
       <dependency>
         <groupId>org.apache.cxf</groupId><!-- io.quarkiverse.cxf:quarkus-cxf-bom:2.0.4 -->

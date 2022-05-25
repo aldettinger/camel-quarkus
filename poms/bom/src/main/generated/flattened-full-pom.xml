@@ -8925,9 +8925,25 @@
         <version>2.20.72</version><!-- software.amazon.awssdk:bom:2.20.72 -->
       </dependency>
       <dependency>
+<<<<<<< HEAD
         <groupId>software.amazon.awssdk</groupId><!-- software.amazon.awssdk:bom:2.20.72 -->
         <artifactId>omics</artifactId><!-- software.amazon.awssdk:bom:2.20.72 -->
         <version>2.20.72</version><!-- software.amazon.awssdk:bom:2.20.72 -->
+=======
+        <groupId>org.redisson</groupId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <artifactId>redisson-quarkus-20</artifactId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <version>3.16.7</version><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+      </dependency>
+      <dependency>
+        <groupId>org.redisson</groupId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <artifactId>redisson-quarkus-20-deployment</artifactId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <version>3.16.7</version><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId><!-- org.codehaus.groovy:groovy-bom:3.0.8 -->
+        <artifactId>groovy</artifactId><!-- org.codehaus.groovy:groovy-bom:3.0.8 -->
+        <version>3.0.8</version><!-- org.codehaus.groovy:groovy-bom:3.0.8 -->
+>>>>>>> bae12ccb12 (Rebase on 2.10.0-SNAPSHOT and investigate the serialization issue)
       </dependency>
       <dependency>
         <groupId>software.amazon.awssdk</groupId><!-- software.amazon.awssdk:bom:2.20.72 -->

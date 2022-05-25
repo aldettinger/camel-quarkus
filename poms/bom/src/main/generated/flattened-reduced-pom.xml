@@ -6969,6 +6969,7 @@
         <version>4.0.1</version>
       </dependency>
       <dependency>
+<<<<<<< HEAD
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-tools-java2ws</artifactId>
         <version>4.0.1</version>
@@ -6992,6 +6993,21 @@
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-tools-wsdlto-frontend-jaxws</artifactId>
         <version>4.0.1</version>
+=======
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-quarkus-20</artifactId>
+        <version>3.16.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-quarkus-20-deployment</artifactId>
+        <version>3.16.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version>3.0.8</version>
+>>>>>>> bae12ccb12 (Rebase on 2.10.0-SNAPSHOT and investigate the serialization issue)
       </dependency>
       <dependency>
         <groupId>software.amazon.awssdk</groupId>

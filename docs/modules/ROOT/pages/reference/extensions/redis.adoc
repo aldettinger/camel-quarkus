@@ -11,15 +11,23 @@
 :cq-deprecated: false
 :cq-jvm-since: 1.6.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 :cq-native-since: 3.0.0
 =======
 :cq-native-since: 2.7.0
 >>>>>>> 477236331c (Rebase on 2.7.0.CR1, native agent captured configs but still issues with customTargetConstructorClass)
+=======
+:cq-native-since: 2.10.0
+>>>>>>> bae12ccb12 (Rebase on 2.10.0-SNAPSHOT and investigate the serialization issue)
 
 ifeval::[{doc-show-badges} == true]
 [.badges]
+<<<<<<< HEAD
 [.badge-key]##JVM since##[.badge-supported]##1.6.0## [.badge-key]##Native since##[.badge-supported]##3.0.0##
 endif::[]
+=======
+[.badge-key]##JVM since##[.badge-supported]##1.6.0## [.badge-key]##Native since##[.badge-supported]##2.10.0##
+>>>>>>> bae12ccb12 (Rebase on 2.10.0-SNAPSHOT and investigate the serialization issue)
 
 Aggregation repository using Redis as datastore
 
