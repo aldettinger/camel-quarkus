@@ -89,7 +89,6 @@
         <module>printer</module>
         <module>pulsar</module>
         <module>quickfix</module>
-        <module>redis</module>
         <module>robotframework</module>
         <module>schematron</module>
         <module>smpp</module>

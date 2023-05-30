@@ -30,6 +30,7 @@
     <name>Camel Quarkus :: Integration Tests :: Redis</name>
     <description>Integration tests for Camel Quarkus Redis extension</description>
 
+  <!-- TODO: Do we really need this dependency management section, not there in amqp itetsts -->
     <dependencyManagement>
         <dependencies>
             <dependency>

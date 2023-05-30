@@ -16,7 +16,6 @@ ifeval::[{doc-show-badges} == true]
 [.badges]
 [.badge-key]##JVM since##[.badge-supported]##1.6.0## [.badge-key]##Native since##[.badge-supported]##3.0.0##
 endif::[]
-=======
 
 Aggregation repository using Redis as datastore
 
@@ -29,6 +28,10 @@ Please refer to the above link for usage and configuration details.
 
 [id="extensions-redis-maven-coordinates"]
 == Maven coordinates
+
+https://{link-quarkus-code-generator}/?extension-search=camel-quarkus-redis[Create a new project with this extension on {link-quarkus-code-generator}, window="_blank"]
+
+Or add the coordinates to your existing project:
 
 [source,xml]
 ----

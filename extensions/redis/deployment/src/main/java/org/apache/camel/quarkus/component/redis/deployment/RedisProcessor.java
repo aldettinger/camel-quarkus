@@ -21,18 +21,18 @@ import java.lang.reflect.Proxy;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
-import io.quarkus.deployment.builditem.nativeimage.NativeImageResourceBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.RuntimeInitializedClassBuildItem;
+import io.quarkus.deployment.builditem.nativeimage.ServiceProviderBuildItem;
+import io.quarkus.deployment.builditem.nativeimage.UnsafeAccessedFieldBuildItem;
 import org.jboss.logging.Logger;
+import org.jboss.marshalling.ProviderDescriptor;
+import org.jboss.marshalling.river.RiverProviderDescriptor;
 
 class RedisProcessor {
 
     private static final Logger LOG = Logger.getLogger(RedisProcessor.class);
     private static final String FEATURE = "camel-redis";
-
-    private static final String[] RUNTIME_RESOURCES = new String[] {
-            "META-INF/services/org.jboss.marshalling.ProviderDescriptor" };
 
     private static final String[] RUNTIME_INITIALIZED_CLASSES = new String[] {
             "io.netty.channel.DefaultChannelId",
@@ -54,9 +54,14 @@ class RedisProcessor {
     }
 
     @BuildStep
-    NativeImageResourceBuildItem registerNativeResources() {
-        // @TODO: ServiceProviderBuildItem
-        return new NativeImageResourceBuildItem(RUNTIME_RESOURCES);
+    ServiceProviderBuildItem registerJbossMarshallingProvider() {
+        return new ServiceProviderBuildItem(ProviderDescriptor.class.getName(), RiverProviderDescriptor.class.getName());
+    }
+
+    @BuildStep
+    UnsafeAccessedFieldBuildItem registerProxyHFieldUnsafeAccess() {
+        // RiverUnmarshaller static initializer uses unsafe access to the Proxy.h field
+        return new UnsafeAccessedFieldBuildItem(Proxy.class.getName(), "h");
     }
 
     @BuildStep
@@ -66,6 +71,8 @@ class RedisProcessor {
 
         producer.produce(new ReflectiveClassBuildItem(false, true, "org.apache.camel.support.DefaultExchangeHolder"));
         producer.produce(new ReflectiveClassBuildItem(true, false, "java.util.HashMap"));
+
+        //producer.produce(new ReflectiveClassBuildItem(false, true, "java.lang.reflect.Proxy"));
 
         // The snippet below tries to register fields from DefaultExchangeHolder
         // however, we would need to register the concrete type (that may be determined at runtime only ?)
