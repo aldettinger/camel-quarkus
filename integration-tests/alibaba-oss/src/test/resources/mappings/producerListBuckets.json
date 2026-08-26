@@ -1,0 +1,14 @@
+{
+  "request": {
+    "urlPath": "/",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ListAllMyBucketsResult>\n  <Owner>\n    <ID>12345</ID>\n    <DisplayName>testowner</DisplayName>\n  </Owner>\n  <Buckets>\n    <Bucket>\n      <Name>list-bucket-alpha</Name>\n      <Region>us-east-1</Region>\n      <StorageClass>Standard</StorageClass>\n      <CreationDate>2024-01-01T00:00:00.000Z</CreationDate>\n    </Bucket>\n    <Bucket>\n      <Name>list-bucket-beta</Name>\n      <Region>us-west-1</Region>\n      <StorageClass>Standard</StorageClass>\n      <CreationDate>2024-02-01T00:00:00.000Z</CreationDate>\n    </Bucket>\n  </Buckets>\n</ListAllMyBucketsResult>",
+    "headers": {
+      "Content-Type": "application/xml",
+      "x-oss-request-id": "list-buckets-request-id-005"
+    }
+  }
+}

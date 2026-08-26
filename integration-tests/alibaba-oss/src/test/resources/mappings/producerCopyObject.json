@@ -1,0 +1,19 @@
+{
+  "request": {
+    "urlPathPattern": "/test-bucket/copy-dest\\.txt",
+    "method": "PUT",
+    "headers": {
+      "x-oss-copy-source": {
+        "matches": ".*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<CopyObjectResult>\n  <ETag>\"copy-dest-etag-006\"</ETag>\n  <LastModified>2024-01-01T00:00:00.000Z</LastModified>\n</CopyObjectResult>",
+    "headers": {
+      "Content-Type": "application/xml",
+      "x-oss-request-id": "copy-request-id-006"
+    }
+  }
+}

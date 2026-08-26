@@ -1,0 +1,18 @@
+{
+  "request": {
+    "urlPathPattern": "/consumer-bucket/consumer-test\\.txt",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "Consumer test content!",
+    "headers": {
+      "Content-Type": "text/plain",
+      "Content-Length": "22",
+      "ETag": "\"consumer-etag-123\"",
+      "Last-Modified": "Mon, 01 Jan 2024 00:00:00 GMT",
+      "x-oss-request-id": "test-consumer-request-id-002",
+      "x-oss-object-type": "Normal"
+    }
+  }
+}

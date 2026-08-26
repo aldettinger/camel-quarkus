@@ -1,0 +1,17 @@
+{
+  "request": {
+    "urlPathPattern": "/test-bucket/put-test\\.txt",
+    "method": "PUT",
+    "bodyPatterns": [
+      { "equalTo": "Put test content" }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/xml",
+      "ETag": "\"put-test-etag-001\"",
+      "x-oss-request-id": "put-request-id-001"
+    }
+  }
+}

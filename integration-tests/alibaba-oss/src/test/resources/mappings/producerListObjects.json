@@ -1,0 +1,14 @@
+{
+  "request": {
+    "urlPathPattern": "/test-bucket/?",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ListBucketResult>\n  <Name>test-bucket</Name>\n  <Prefix></Prefix>\n  <MaxKeys>100</MaxKeys>\n  <KeyCount>2</KeyCount>\n  <IsTruncated>false</IsTruncated>\n  <Contents>\n    <Key>list-file-alpha.txt</Key>\n    <LastModified>2024-01-01T00:00:00.000Z</LastModified>\n    <ETag>\"list-alpha-etag-004\"</ETag>\n    <Size>10</Size>\n    <StorageClass>Standard</StorageClass>\n  </Contents>\n  <Contents>\n    <Key>list-file-beta.txt</Key>\n    <LastModified>2024-01-02T00:00:00.000Z</LastModified>\n    <ETag>\"list-beta-etag-005\"</ETag>\n    <Size>25</Size>\n    <StorageClass>Standard</StorageClass>\n  </Contents>\n</ListBucketResult>",
+    "headers": {
+      "Content-Type": "application/xml",
+      "x-oss-request-id": "list-request-id-004"
+    }
+  }
+}

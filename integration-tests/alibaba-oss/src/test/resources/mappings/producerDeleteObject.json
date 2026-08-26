@@ -1,0 +1,12 @@
+{
+  "request": {
+    "urlPathPattern": "/test-bucket/delete-test\\.txt",
+    "method": "DELETE"
+  },
+  "response": {
+    "status": 204,
+    "headers": {
+      "x-oss-request-id": "delete-request-id-003"
+    }
+  }
+}

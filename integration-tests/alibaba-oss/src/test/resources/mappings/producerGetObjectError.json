@@ -1,0 +1,14 @@
+{
+  "request": {
+    "urlPathPattern": "/error-bucket/no-such-key\\.txt",
+    "method": "GET"
+  },
+  "response": {
+    "status": 404,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error>\n  <Code>NoSuchKey</Code>\n  <Message>The specified key does not exist.</Message>\n  <RequestId>error-request-id-001</RequestId>\n  <HostId>error-bucket.oss-us-east-1.aliyuncs.com</HostId>\n</Error>",
+    "headers": {
+      "Content-Type": "application/xml",
+      "x-oss-request-id": "error-request-id-001"
+    }
+  }
+}

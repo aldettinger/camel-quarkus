@@ -1,0 +1,18 @@
+{
+  "request": {
+    "urlPathPattern": "/test-bucket/get-test\\.txt",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "Get test content",
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "16",
+      "ETag": "\"get-test-etag-002\"",
+      "Last-Modified": "Mon, 01 Jan 2024 00:00:00 GMT",
+      "x-oss-request-id": "get-request-id-002",
+      "x-oss-object-type": "Normal"
+    }
+  }
+}

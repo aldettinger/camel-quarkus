@@ -1,0 +1,14 @@
+{
+  "request": {
+    "urlPathPattern": "/consumer-bucket/?",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ListBucketResult>\n  <Name>consumer-bucket</Name>\n  <Prefix></Prefix>\n  <MaxKeys>10</MaxKeys>\n  <KeyCount>1</KeyCount>\n  <IsTruncated>false</IsTruncated>\n  <Contents>\n    <Key>consumer-test.txt</Key>\n    <LastModified>2024-01-01T00:00:00.000Z</LastModified>\n    <ETag>\"consumer-etag-123\"</ETag>\n    <Size>22</Size>\n    <StorageClass>Standard</StorageClass>\n  </Contents>\n</ListBucketResult>",
+    "headers": {
+      "Content-Type": "application/xml",
+      "x-oss-request-id": "test-consumer-request-id-001"
+    }
+  }
+}

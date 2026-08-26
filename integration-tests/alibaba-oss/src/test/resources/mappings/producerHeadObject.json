@@ -1,0 +1,17 @@
+{
+  "request": {
+    "urlPathPattern": "/test-bucket/head-test\\.txt",
+    "method": "HEAD"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/plain",
+      "Content-Length": "10",
+      "ETag": "\"head-test-etag-007\"",
+      "Last-Modified": "Mon, 01 Jan 2024 00:00:00 GMT",
+      "x-oss-storage-class": "Standard",
+      "x-oss-request-id": "head-request-id-007"
+    }
+  }
+}
