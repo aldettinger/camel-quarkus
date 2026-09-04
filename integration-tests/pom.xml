@@ -53,6 +53,7 @@
         <module>activemq6</module>
         <module>ai-tool</module>
         <module>ai-tool-langchain4j</module>
+        <module>alibaba-mns</module>
         <module>alibaba-oss</module>
         <module>amqp</module>
         <module>arangodb</module>

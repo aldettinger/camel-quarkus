@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/queues/test-queue/messages(\\?.*)?",
+    "headers": {
+      "x-mns-version": {
+        "matches": ".*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/xml;charset=utf-8",
+      "x-mns-request-id": "test-request-id-receive"
+    },
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Message xmlns=\"http://mns.aliyuncs.com/doc/v1/\"><MessageId>msg-recv-001</MessageId><ReceiptHandle>test-receipt-handle</ReceiptHandle><MessageBody>UmVjZWl2ZWQgbWVzc2FnZSBjb250ZW50</MessageBody><MessageBodyMD5>d41d8cd98f00b204e9800998ecf8427e</MessageBodyMD5><EnqueueTime>1609459200000</EnqueueTime><NextVisibleTime>1609462800000</NextVisibleTime><FirstDequeueTime>1609459200000</FirstDequeueTime><DequeueCount>1</DequeueCount><Priority>8</Priority></Message>"
+  }
+}

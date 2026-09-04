@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/queues/test-queue/messages"
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "text/xml;charset=utf-8",
+      "x-mns-request-id": "test-request-id-send"
+    },
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Message xmlns=\"http://mns.aliyuncs.com/doc/v1/\"><MessageId>msg-send-001</MessageId><MessageBodyMD5>d41d8cd98f00b204e9800998ecf8427e</MessageBodyMD5></Message>"
+  }
+}

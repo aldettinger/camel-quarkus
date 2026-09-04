@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/queues/nonexistent-queue/messages"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "text/xml;charset=utf-8",
+      "x-mns-request-id": "req-error-001"
+    },
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error xmlns=\"http://mns.aliyuncs.com/doc/v1\"><Code>QueueNotExist</Code><Message>The queue name you provided does not exist.</Message><RequestId>req-error-001</RequestId><HostId>mns.us-east-1.aliyuncs.com</HostId></Error>"
+  }
+}

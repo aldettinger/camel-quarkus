@@ -118,6 +118,7 @@ group-05:
   - xmlsecurity
   - syslog
 group-06:
+  - alibaba-mns
   - alibaba-oss
   - exec
   - file

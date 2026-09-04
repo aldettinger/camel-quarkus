@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "DELETE",
+    "urlPattern": "/queues/test-queue/messages\\?ReceiptHandle=test-receipt-handle"
+  },
+  "response": {
+    "status": 204,
+    "headers": {
+      "x-mns-request-id": "test-request-id-delete"
+    }
+  }
+}

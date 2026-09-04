@@ -59,6 +59,7 @@
 *** xref:reference/extensions/aws-secrets-manager.adoc[AWS Secrets Manager]
 *** xref:reference/extensions/activemq.adoc[ActiveMQ]
 *** xref:reference/extensions/activemq6.adoc[ActiveMQ 6.x]
+*** xref:reference/extensions/alibaba-mns.adoc[Alibaba Message Service (MNS)]
 *** xref:reference/extensions/alibaba-oss.adoc[Alibaba OSS]
 *** xref:reference/extensions/arangodb.adoc[ArangoDb]
 *** xref:reference/extensions/asterisk.adoc[Asterisk]
