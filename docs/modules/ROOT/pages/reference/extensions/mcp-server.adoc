@@ -182,7 +182,15 @@ public class CalculatorTools {
 
 is exposed alongside the `ai-tool` routes. Annotated tools are registered at
 build time; Camel tools are added and removed dynamically with the route
-lifecycle. Choose distinct tool names — MCP has a flat tool namespace.
+lifecycle. `quarkus.camel.mcp-server.tags` only selects `ai-tool` routes:
+annotated tools are owned by quarkus-mcp-server and are exposed whatever the
+tags are, declaring `@Tool` being the opt-in.
+
+Choose distinct tool names — MCP has a flat tool namespace. The Camel
+collision check only covers the tools the bridge publishes itself, so a name
+already taken by an annotated tool is refused by quarkus-mcp-server instead:
+the annotated tool keeps the name, the `ai-tool` route still starts and the
+refusal is logged as an error.
 
 [id="extensions-mcp-server-usage-dynamic-tools"]
 === Dynamic tools
