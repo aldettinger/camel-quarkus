@@ -70,7 +70,8 @@ class McpServerTest {
     void testListToolsExposesOnlySelectedTags() {
         client().when()
                 .toolsList(page -> assertThat(toolNames(page))
-                        .contains("say_hello", "fail_tool", "slow_tool")
+                        .contains("say_hello", "fail_tool", "slow_tool", "annotated_tool", "unannotated_tool",
+                                "create_order")
                         .doesNotContain("hidden_tool", "other_tool"))
                 .thenAssertResults();
     }
@@ -84,6 +85,22 @@ class McpServerTest {
                     assertThat(tool.annotations()).isPresent();
                     assertThat(tool.annotations().orElseThrow().readOnlyHint()).isTrue();
                     assertThat(tool.annotations().orElseThrow().idempotentHint()).isTrue();
+                })
+                .thenAssertResults();
+    }
+
+    /**
+     * The negative counterpart of {@link #testToolAnnotationHintsArePublished()}: the quarkiverse annotations record
+     * uses primitive booleans, so publishing it for a tool that sets no hint would silently advertise the defaults as
+     * if they were deliberate. A tool with no hint at all must publish no annotations and no title.
+     */
+    @Test
+    void testToolWithoutAnnotationHintsPublishesNone() {
+        client().when()
+                .toolsList(page -> {
+                    ToolInfo tool = toolByName(page, "unannotated_tool");
+                    assertThat(tool.title()).isNull();
+                    assertThat(tool.annotations()).isEmpty();
                 })
                 .thenAssertResults();
     }
@@ -127,12 +144,64 @@ class McpServerTest {
                 .thenAssertResults();
     }
 
+    /**
+     * MCP has a flat tool namespace, but the bridge's collision check only knows about the Camel tools it published
+     * itself: it has no visibility into the quarkus-mcp-server tools registered at build time from {@code @Tool}
+     * methods, so the refusal comes from the quarkiverse tool manager instead. The colliding route is started with
+     * the application, which is the case that matters: it is already registered when the bridge starts, so a refusal
+     * that threw would escape the bridge startup and fail the whole application.
+     */
+    @Test
+    void testCamelToolCollidingWithAnnotatedToolIsRefused() {
+        assertThat(routeStatus("clashing-tool-route")).isEqualTo("Started");
+        client().when()
+                .toolsList(page -> assertThat(toolNames(page)).containsOnlyOnce("add_numbers"))
+                .toolsCall("add_numbers", Map.of("a", 17, "b", 25), response -> {
+                    assertThat(response.isError()).isNotEqualTo(Boolean.TRUE);
+                    assertThat(textOf(response)).isEqualTo("42");
+                })
+                .thenAssertResults();
+    }
+
+    /**
+     * The refused tool was never registered by the engine, so deregistering it on route stop must be a no-op rather
+     * than a removal of the annotated tool that owns the name.
+     */
+    @Test
+    void testStoppingRefusedToolKeepsApplicationTool() {
+        controlRoute("clashing-tool-route", "stop");
+        try {
+            client().when()
+                    .toolsCall("add_numbers", Map.of("a", 1, "b", 2), response -> {
+                        assertThat(response.isError()).isNotEqualTo(Boolean.TRUE);
+                        assertThat(textOf(response)).isEqualTo("3");
+                    })
+                    .thenAssertResults();
+        } finally {
+            controlRoute("clashing-tool-route", "start");
+        }
+    }
+
     @Test
     void testCallToolSuccess() {
         client().when()
                 .toolsCall("say_hello", Map.of("name", "World"), response -> {
                     assertThat(response.isError()).isNotEqualTo(Boolean.TRUE);
                     assertThat(textOf(response)).isEqualTo("Hello World");
+                })
+                .thenAssertResults();
+    }
+
+    /**
+     * A missing required argument is an argument error, not an execution error: unlike a route failure it is not
+     * sanitized, so the client gets the validation message telling it what to fix.
+     */
+    @Test
+    void testCallToolMissingRequiredArgument() {
+        client().when()
+                .toolsCall("say_hello", response -> {
+                    assertThat(response.isError()).isTrue();
+                    assertThat(textOf(response)).isEqualTo("Missing required argument 'name' for tool 'say_hello'");
                 })
                 .thenAssertResults();
     }
@@ -165,31 +234,31 @@ class McpServerTest {
                 .toolsList(page -> assertThat(toolNames(page)).contains("say_hello"))
                 .thenAssertResults();
 
-        controlRoute("stop");
-        assertThat(routeStatus()).isEqualTo("Stopped");
+        controlRoute("say-hello-route", "stop");
+        assertThat(routeStatus("say-hello-route")).isEqualTo("Stopped");
         await().atMost(10, TimeUnit.SECONDS).untilAsserted(() -> client().when()
                 .toolsList(page -> assertThat(toolNames(page)).doesNotContain("say_hello"))
                 .thenAssertResults());
 
-        controlRoute("start");
-        assertThat(routeStatus()).isEqualTo("Started");
+        controlRoute("say-hello-route", "start");
+        assertThat(routeStatus("say-hello-route")).isEqualTo("Started");
         await().atMost(10, TimeUnit.SECONDS).untilAsserted(() -> client().when()
                 .toolsList(page -> assertThat(toolNames(page)).contains("say_hello"))
                 .thenAssertResults());
     }
 
-    private static void controlRoute(String action) {
+    private static void controlRoute(String routeId, String action) {
         RestAssured.given()
                 .when()
-                .post("/mcp-server/route/say-hello-route/" + action)
+                .post("/mcp-server/route/" + routeId + "/" + action)
                 .then()
                 .statusCode(204);
     }
 
-    private static String routeStatus() {
+    private static String routeStatus(String routeId) {
         return RestAssured.given()
                 .when()
-                .get("/mcp-server/route/say-hello-route/status")
+                .get("/mcp-server/route/" + routeId + "/status")
                 .then()
                 .statusCode(200)
                 .extract()

@@ -53,6 +53,16 @@ public class McpServerRoutes extends RouteBuilder {
                 + "&idempotentHint=true")
                 .setBody(constant("annotated"));
 
+        from("ai-tool:unannotated_tool?tags=conformance&description=Tool without annotation hints")
+                .setBody(constant("unannotated"));
+
+        // the name is taken by the annotated tool in QuarkusDefinedTools; started with the application, so it is
+        // refused while the MCP bridge starts, which must not fail the application startup
+        from("ai-tool:add_numbers?tags=conformance"
+                + "&description=Name already taken by an annotated tool, must be refused")
+                .routeId("clashing-tool-route")
+                .setBody(constant("camel"));
+
         from("ai-tool:create_order?tags=conformance&description=Create an order"
                 + "&argSchema=classpath:schema/create-order.json")
                 .process(e -> {
