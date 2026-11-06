@@ -155,10 +155,13 @@ class McpServerTest {
     void testCamelToolCollidingWithAnnotatedToolIsRefused() {
         assertThat(routeStatus("clashing-tool-route")).isEqualTo("Started");
         client().when()
-                .toolsList(page -> assertThat(toolNames(page)).containsOnlyOnce("add_numbers"))
-                .toolsCall("add_numbers", Map.of("a", 17, "b", 25), response -> {
+                .toolsList(page -> assertThat(toolNames(page)).containsOnlyOnce("clashing_tool"))
+                .toolsCall("clashing_tool", response -> {
                     assertThat(response.isError()).isNotEqualTo(Boolean.TRUE);
-                    assertThat(textOf(response)).isEqualTo("42");
+                    // the answer tells which of the two implementations served the call
+                    assertThat(textOf(response))
+                            .isEqualTo(QuarkusDefinedTools.CLASHING_TOOL_ANSWER)
+                            .isNotEqualTo(McpServerRoutes.CLASHING_TOOL_ANSWER);
                 })
                 .thenAssertResults();
     }
@@ -172,9 +175,9 @@ class McpServerTest {
         controlRoute("clashing-tool-route", "stop");
         try {
             client().when()
-                    .toolsCall("add_numbers", Map.of("a", 1, "b", 2), response -> {
+                    .toolsCall("clashing_tool", response -> {
                         assertThat(response.isError()).isNotEqualTo(Boolean.TRUE);
-                        assertThat(textOf(response)).isEqualTo("3");
+                        assertThat(textOf(response)).isEqualTo(QuarkusDefinedTools.CLASHING_TOOL_ANSWER);
                     })
                     .thenAssertResults();
         } finally {

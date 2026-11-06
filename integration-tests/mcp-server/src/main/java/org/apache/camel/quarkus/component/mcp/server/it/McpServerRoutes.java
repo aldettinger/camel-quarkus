@@ -25,6 +25,8 @@ import org.apache.camel.builder.RouteBuilder;
 @ApplicationScoped
 public class McpServerRoutes extends RouteBuilder {
 
+    public static final String CLASHING_TOOL_ANSWER = "Camel AI tool called (declared with a from(\"ai-tool:...\") route)";
+
     @Override
     public void configure() {
         from("ai-tool:say_hello?tags=conformance&description=Say hello"
@@ -57,11 +59,12 @@ public class McpServerRoutes extends RouteBuilder {
                 .setBody(constant("unannotated"));
 
         // the name is taken by the annotated tool in QuarkusDefinedTools; started with the application, so it is
-        // refused while the MCP bridge starts, which must not fail the application startup
-        from("ai-tool:add_numbers?tags=conformance"
+        // refused while the MCP bridge starts, which must not fail the application startup. A call answered with
+        // this body would mean the Camel tool took the name over
+        from("ai-tool:clashing_tool?tags=conformance"
                 + "&description=Name already taken by an annotated tool, must be refused")
                 .routeId("clashing-tool-route")
-                .setBody(constant("camel"));
+                .setBody(constant(CLASHING_TOOL_ANSWER));
 
         from("ai-tool:create_order?tags=conformance&description=Create an order"
                 + "&argSchema=classpath:schema/create-order.json")
